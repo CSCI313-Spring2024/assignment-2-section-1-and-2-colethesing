@@ -1,0 +1,47 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: blue !important;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    color: green !important;
+    font-style: italic !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+button{
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+}
+.csci313 {
+    background-color: greenyellow !important;
+}
+
+.csci372{
+    background-color: lightblue !important;
+}
+.stat368{
+    background-color: lightcoral !important;
+}
+.ms202{
+    background-color: green !important;
+}
+.csci467{
+    background-color: plum !important;
+}
+.empty{
+    background-color: white !important;
+}

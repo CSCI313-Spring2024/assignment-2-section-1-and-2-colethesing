@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Personal Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -22,6 +22,8 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carousel">Favorite Photos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -49,6 +51,18 @@
                 <li>Video games</li>
                 <li>Coding</li>
             </ol>
+            <h3>Favorite Sites</h3>
+            <ol>
+                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+            </ol>
+            <h3>Favorite Movies</h3>
+            <ul>
+                <li>Avengers: Endgame</li>
+                <li>Interstellar</li>
+                <li>Saving Private Ryan</li>
+            </ul>
         </article>
     </section>
 
@@ -56,7 +70,7 @@
     <section id="portfolio" class="container py-5">
         <h2>My Projects</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="Images/code.jpg" class="card-img-top" alt="Project 1">
                     <div class="card-body">
@@ -65,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="Images/code2.jpg" class="card-img-top" alt="Project 2">
                     <div class="card-body">
@@ -77,31 +91,150 @@
         </div>
     </section>
 
+    <!-- Schedule Section -->
+    <section id="schedule" class="container my-5">
+        <h2 class="text-center mb-4">Weekly Schedule</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>11:00 AM - 11:50 AM</td>
+                        <td class="csci313">CSCI313</td>
+
+                        <td class="csci372">CSCI372</td>
+                        <td class="csci313">CSCI313</td>
+                        <td class="csci372">CSCI372</td>
+                        <td class="csci313">CSCI313</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM - 3:15 PM</td>
+                        <td class="empty"></td>
+                        <td class="stat368">STAT368</td>
+                        <td class="ms202">MS202</td>
+                        <td class="stat368">STAT368</td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr>
+                        <td>3:30 PM - 4:45 PM</td>
+                        <td class="empty"></td>
+                        <td class="csci467">CSCI467</td>
+                        <td class="empty"></td>
+                        <td class="csci467">CSCI467</td>
+                        <td class="empty"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="container my-5">
+        <h2 class="text-center mb-4">Favorite Photos of My Cat</h2>
+        <div id="interestsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#interestsCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/piper1.jpg" class="d-block w-100" alt="Piper1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pipers First Day</h5>
+                        <p>This is the day I brought Piper home from the shelter!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/piper2.jpg" class="d-block w-100" alt="piper2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Two months after getting her.</h5>
+                        <p>First drive up to Fargo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/piper3.jpg" class="d-block w-100" alt="piper3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Recent Photo</h5>
+                        <p>This is a photo from a week ago. About 6 months after getting her!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#interestsCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#interestsCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="container py-5">
         <h2>Contact Me</h2>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name">
+        <form id="contactForm" novalidate>
+            <div class="row mb-3">
+                <div class="col-12 col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                    <div class="invalid-feedback">
+                        Please enter your name.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email">
-            </div>
+
             <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter your message.
+                </div>
             </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </section>
+
+    <!-- Form Validation JavaScript -->
+    <script>
+        var form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (form.checkValidity()) {
+                alert('Form is valid and ready to submit!');
+                form.submit();
+            } else {
+                form.classList.add('was-validated');
+            }
+        });
+    </script>
+
     <footer class="bg-dark text-white text-center p-3">
         &copy; 2025 My Website. All rights reserved.
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
