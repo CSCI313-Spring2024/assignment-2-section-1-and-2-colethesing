@@ -22,15 +22,28 @@
     </nav>
     <!-- Home page -->
     <section id="home" class="container text-center my-5">
-        <h1>Welcome to My Personal Website</h1>
+        <h1>Welcome to My Website</h1>
         <img src="profile.jpg" class="rounded-circle" alt="Profile Image" width="200">
-        <p>Brief bio and introduction goes here.</p>
+        <p>Bio: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis voluptas deleniti quaerat iste! Exercitationem!</p>
+        <address>
+            <p>Email: cole.thesing@NDSU.edu</p>
+            <p>Address: 111 University Dr. Fargo, ND 58103</p>
+        </address>
     </section>
-
     <!-- About Me Section -->
     <section id="about" class="container my-5">
         <h2>About Me</h2>
-        <p>Details about personal and professional background, interests, and hobbies.</p>
+        <p>Details about personal and professional background: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Dolorum, facere. Sint eveniet rerum ratione veritatis.</p>
+             <article>
+                <h3>Interests and Hobbies</h3>
+                <ol>
+                    <li>Fishing</li>
+                    <li>Golf</li>
+                    <li>Video games</li>
+                    <li>Coding</li>
+                </ol>
+             </article>
     </section>
     
     <!-- Portfolio Section -->
@@ -42,16 +55,36 @@
                     <img src="project1.jpg" class="card-img-top" alt="Project 1">
                     <div class="card-body">
                         <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">My name is Cole Thesing, I am a sophmore in computer science
-                            at North Dakota State University. I am from Albany, Minnesota and currently live in Fargo, North Dakota.
-                        </p>
-                        <br>
-                        <p>Address: 2650 15th st s Fargo, ND 58103</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet..</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+    <footer class="bg-dark text-white text-center p-3">
+        &copy; 2025 My Website. All rights reserved.
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
